@@ -1,0 +1,25 @@
+{
+  "FolderOrderSettings":[
+    {"name":"font","order":6,"path":"folders/font.yy",},
+    {"name":"ROOMS","order":2,"path":"folders/ROOMS.yy",},
+    {"name":"SPR","order":1,"path":"folders/SPR.yy",},
+  ],
+  "ResourceOrderSettings":[
+    {"name":"obj_button","order":4,"path":"objects/obj_button/obj_button.yy",},
+    {"name":"obj_nanamifrente","order":1,"path":"objects/obj_nanamifrente/obj_nanamifrente.yy",},
+    {"name":"Object5","order":3,"path":"objects/Object5/Object5.yy",},
+    {"name":"Object6","order":5,"path":"objects/Object6/Object6.yy",},
+    {"name":"MENU","order":1,"path":"rooms/MENU/MENU.yy",},
+    {"name":"menu","order":10,"path":"sprites/menu/menu.yy",},
+    {"name":"spr_button","order":9,"path":"sprites/spr_button/spr_button.yy",},
+    {"name":"spr_nanamidir","order":1,"path":"sprites/spr_nanamidir/spr_nanamidir.yy",},
+    {"name":"spr_nanamiesq","order":2,"path":"sprites/spr_nanamiesq/spr_nanamiesq.yy",},
+    {"name":"spr_nanamifrente","order":3,"path":"sprites/spr_nanamifrente/spr_nanamifrente.yy",},
+    {"name":"Sprite12","order":11,"path":"sprites/Sprite12/Sprite12.yy",},
+    {"name":"Sprite2","order":4,"path":"sprites/Sprite2/Sprite2.yy",},
+    {"name":"Sprite3","order":5,"path":"sprites/Sprite3/Sprite3.yy",},
+    {"name":"Sprite4","order":6,"path":"sprites/Sprite4/Sprite4.yy",},
+    {"name":"Sprite5","order":7,"path":"sprites/Sprite5/Sprite5.yy",},
+    {"name":"Sprite8","order":8,"path":"sprites/Sprite8/Sprite8.yy",},
+  ],
+}
