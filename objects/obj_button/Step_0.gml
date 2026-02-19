@@ -7,7 +7,7 @@ if(texto == "jogar")
 		
 	if(_encima and _click)
 	{
-		room_goto(jogo)
+		room_goto(rm_castelo)
 	}
 }
 else if(texto == "sair")

@@ -1,1 +1,1 @@
-destino = jogo
+destino = rm_castelo

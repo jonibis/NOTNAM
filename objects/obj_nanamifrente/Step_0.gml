@@ -6,6 +6,12 @@ var _baixo = keyboard_check(vk_down);
 velh = (_dir - _esq) * vel;
 velv = (_baixo - _cima) * vel;
 
+
+if(place_meeting(x+velh, y,obj_wall)){
+	while(!place_meeting(x+sign(velh),y, obj_wall))
+	x = x + sign(velh)
+	}
+
 x += velh;
 y += velv;
 

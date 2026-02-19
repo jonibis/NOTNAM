@@ -1,9 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"Object2",
-  "eventList":[],
+  "%Name":"obj_wall",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_nanamifrente","path":"objects/obj_nanamifrente/obj_nanamifrente.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"Object2",
+  "name":"obj_wall",
   "overriddenProperties":[],
   "parent":{
     "name":"objs",
@@ -26,11 +28,11 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
-    "name":"spr_gata",
-    "path":"sprites/spr_gata/spr_gata.yy",
+    "name":"spr_wall",
+    "path":"sprites/spr_wall/spr_wall.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

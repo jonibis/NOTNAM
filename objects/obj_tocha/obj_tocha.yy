@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"Object2",
+  "%Name":"obj_tocha",
   "eventList":[],
   "managed":true,
-  "name":"Object2",
+  "name":"obj_tocha",
   "overriddenProperties":[],
   "parent":{
     "name":"objs",
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_gata",
-    "path":"sprites/spr_gata/spr_gata.yy",
+    "name":"spr_tocha",
+    "path":"sprites/spr_tocha/spr_tocha.yy",
   },
   "spriteMaskId":null,
   "visible":true,

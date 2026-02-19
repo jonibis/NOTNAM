@@ -1,11 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"Object6",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_menu",
+  "eventList":[],
   "managed":true,
-  "name":"Object6",
+  "name":"obj_menu",
   "overriddenProperties":[],
   "parent":{
     "name":"objs",
@@ -28,8 +26,11 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
-  "spriteId":null,
+  "solid":true,
+  "spriteId":{
+    "name":"spr_menu",
+    "path":"sprites/spr_menu/spr_menu.yy",
+  },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

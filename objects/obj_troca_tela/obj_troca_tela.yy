@@ -1,9 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"Object5",
-  "eventList":[],
+  "%Name":"obj_troca_tela",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_nanamifrente","path":"objects/obj_nanamifrente/obj_nanamifrente.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"Object5",
+  "name":"obj_troca_tela",
   "overriddenProperties":[],
   "parent":{
     "name":"objs",
@@ -26,11 +29,11 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
+  "solid":false,
   "spriteId":{
-    "name":"Sprite8",
-    "path":"sprites/Sprite8/Sprite8.yy",
+    "name":"spr_troca_tela",
+    "path":"sprites/spr_troca_tela/spr_troca_tela.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }
