@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"Object2",
+  "%Name":"obj_menu0",
   "eventList":[],
   "managed":true,
-  "name":"Object2",
+  "name":"obj_menu0",
   "overriddenProperties":[],
   "parent":{
     "name":"objs",
@@ -26,11 +26,11 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
-    "name":"spr_gata",
-    "path":"sprites/spr_gata/spr_gata.yy",
+    "name":"spr_menu",
+    "path":"sprites/spr_menu/spr_menu.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
