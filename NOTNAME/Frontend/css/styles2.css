@@ -1,0 +1,367 @@
+
+/* ========================================= */
+/* LOGIN */
+/* ========================================= */
+
+.login-area{
+  display:flex;
+  align-items:center;
+  gap:15px;
+}
+
+.login-btn{
+  background:#c992ff;
+  border:none;
+  padding:09px 20px;
+  border-radius:30px;
+  color:white;
+  font-family:'Press Start 2P', cursive;
+  font-size:9px;
+  cursor:pointer;
+  transition:.3s;
+  box-shadow:0 0 15px rgba(201,146,255,.4);
+}
+
+.login-btn:hover{
+  transform:scale(1.08);
+  background:#ddb7ff;
+}
+
+    .user-avatar{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    overflow:hidden;
+    border:2px solid #f3f3f3;
+    box-shadow:0 0 15px rgba(255,255,255,.4);
+  }
+
+   .user-avatar img{
+    width:100%;
+    height:100%;
+   object-fit:cover;
+  }
+   
+   
+   
+   *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      background:#000;
+      font-family:'Press Start 2P', cursive;
+      overflow-x:hidden;
+      color:white;
+    }
+
+    a{
+      text-decoration:none;
+      color:white;
+    }
+
+    /* HERO */
+
+    .hero{
+      
+     width:100%;
+     height:500px;
+     position:relative;
+     overflow:hidden;
+    }
+
+    /* VIDEO BACKGROUND */
+
+.bg-video{
+  position:absolute;
+  top:0;
+  left:0;
+
+  width:100%;
+  height:100%;
+
+  object-fit:cover;
+
+  z-index:-2;
+}
+
+/* ESCURECER O VIDEO */
+
+.video-overlay{
+  position:absolute;
+  top:0;
+  left:0;
+
+  width:100%;
+  height:100%;
+
+  background:rgba(0,0,0,.45);
+
+  z-index:-1;
+}
+    
+
+    /* NAVBAR */
+
+    .navbar{
+      width:100%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:30px 60px;
+    }
+
+    .logo{
+      font-size:28px;
+      letter-spacing:4px;
+    }
+
+    .menu{
+      display:flex;
+      gap:40px;
+      font-size:10px;
+    }
+
+    .menu a{
+      transition:.3s;
+    }
+
+    .menu a:hover{
+      color:#d9a8ff;
+    }
+
+    /* HERO CONTENT */
+
+    .hero-content{
+      position:absolute;
+      left:80px;
+      top:160px;
+      right:80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      min-height: 120px;
+    }
+
+    .hero-text{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .hero-content h1{
+      font-size:38px;
+      margin-bottom:20px;
+      line-height:1.4;
+      text-shadow:4px 4px 0 #000;
+      text-align:left;
+      margin: 0;
+    }
+
+    .hero-content p{
+      font-size:12px;
+      line-height:1.8;
+      margin: 0;
+      width: auto;
+      text-align:left;
+    }
+
+    /* BUTTON */
+
+     .download-btn{
+     background:#c992ff;
+     padding:18px 45px;
+     border-radius:40px;
+     font-size:12px;
+     color:white;
+      display:inline-block;
+      transition:.3s;
+      box-shadow:0 0 20px rgba(201,146,255,.4);
+
+     position:relative;
+
+      top:120px;
+     right:0;
+
+}
+
+    .download-btn:hover{
+      transform:scale(1.08);
+      background:#d9a8ff;
+    }
+
+    /* GAMEPLAY CARDS */
+
+    .cards{
+      width:100%;
+      display:flex;
+      justify-content:center;
+      gap:35px;
+      margin-top:-40px;
+      position:relative;
+      z-index:3;
+    }
+
+    .card{
+      text-align:center;
+    }
+
+    .card p{
+      margin-bottom:12px;
+      font-size:10px;
+    }
+
+    .card img{
+      width: 500px;;
+      height:250px;
+      object-fit:cover;
+      border-radius:12px;
+      transition:.3s;
+    }
+
+    .card img:hover{
+      transform:translateY(-8px);
+      box-shadow:0 0 20px rgba(255,255,255,.25);
+    }
+
+    /* CONTENT SECTION */
+
+    .content{
+      width:100%;
+      display:flex;
+      justify-content:center;
+      gap:100px;
+      padding:90px 80px;
+      align-items:center;
+      background:black;
+    }
+
+    /* PLATFORM BUTTONS */
+
+    .platforms{
+      display:flex;
+      flex-direction:column;
+      gap:25px;
+    }
+
+    .platform{
+      width:210px;
+      height:70px;
+      background:#c992ff;
+      border-radius:10px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      transition:.3s;
+      cursor:pointer;
+    }
+
+    .platform:hover{
+      transform:scale(1.05);
+      background:#d9a8ff;
+    }
+
+    .platform img{
+      width:120px;
+    }
+
+    /* BIG IMAGE */
+
+    .big-image{
+     position:relative;
+     width:420px;
+      height:260px;
+     overflow:hidden;
+      border-radius:12px;
+    }
+
+    .slide{
+     position:absolute;
+     top:0;
+     left:0;
+     width:100%;
+     height:100%;
+     object-fit:cover;
+     opacity:0;
+     transition:opacity 1.5s ease-in-out;
+    }
+
+       .slide.active{
+       opacity:1;
+       }
+    /* FOOTER */
+
+    footer{
+      width:100%;
+      background:#c992ff;
+      padding:50px 80px;
+      display:flex;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      color:black;
+    }
+
+    .footer-column h3{
+      margin-bottom:20px;
+      font-size:14px;
+    }
+
+    .footer-column p{
+      font-size:10px;
+      margin-bottom:12px;
+      cursor:pointer;
+    }
+
+    .footer-column p:hover{
+      text-decoration:underline;
+    }
+
+    /* RESPONSIVE */
+
+    @media(max-width:900px){
+
+      .hero{
+        height:650px;
+      }
+
+      .navbar{
+        flex-direction:column;
+        gap:30px;
+      }
+
+      .menu{
+        flex-wrap:wrap;
+        justify-content:center;
+      }
+
+      .hero-content{
+         position:absolute;
+         left:80px;
+         right:80px;
+        top:160px;
+
+        display:flex;
+        justify-content:space-between;
+         align-items:flex-start;
+      }
+
+      .hero-content p{
+        width:100%;
+      }
+
+      .cards{
+        flex-direction:column;
+        align-items:center;
+      }
+
+      .content{
+        flex-direction:column;
+      }
+
+      footer{
+        gap:50px;
+      }
+
+    }
