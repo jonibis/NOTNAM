@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAVELF — Fórum da Comunidade</title>
+
+    <!-- Fontes (ainda HTML) -->
+    <link  href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link  rel="stylesheet"  href="/Frontend/css/styles_Forum.css">
+
+</head>
+
+<body>
+ 
+    <nav>
+        <div class="nav-left">
+            <a href="#" class="logo">JAVELF</a>
+            <div class="nav-links">
+                <a href="#">História</a><a href="#">Personagens</a>
+                <a href="#" class="active">Comunidade</a><a href="#">Suporte</a>
+            </div>
+        </div>
+        <button class="btn-new" onclick="abrirModalNovoTopico()">+ Novo Tópico</button>
+    </nav>
+
+    <div class="forum-wrapper" id="forumWrapper">
+        <div class="content">
+            <p class="page-eyebrow">Comunidade</p>
+            <h1 class="page-title">Fórum JAVELF</h1>
+            <p class="page-subtitle">Discussões, lore, conquistas e muito mais do Norte Perdido</p>
+
+            <div class="toolbar">
+                <div class="search-wrap"><input type="text" placeholder="Buscar tópicos..." /></div>
+                <div class="sort-group">
+                    <button class="sort-btn active">Recente</button>
+                    <button class="sort-btn">Respostas</button>
+                    <button class="sort-btn">Views</button>
+                </div>
+            </div>
+
+            <div class="cat-pills">
+                <button class="cat-pill active">Todos</button>
+                <button class="cat-pill">Gameplay</button>
+                <button class="cat-pill">História</button>
+                <button class="cat-pill">Arte</button>
+                <button class="cat-pill">Comunidade</button>
+                <button class="cat-pill">Q&A</button>
+                <button class="cat-pill">Social</button>
+            </div>
+
+            <div class="forum-table">
+                <div class="table-head">
+                    <span>Tópico</span><span>Categoria</span><span>Usuários</span>
+                    <span style="text-align:center">Reply</span>
+                    <span style="text-align:center">Views</span>
+                    <span style="text-align:center">Tempo</span>
+                </div>
+
+                <div class="thread-row pinned" id="t1" onclick="carregarComentarios(1)">
+                    <div class="title-col">
+                        <div class="title-line">
+                            <svg class="icon-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <line x1="12" y1="17" x2="12" y2="22" />
+                                <path
+                                    d="M5 17h14v-1.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V6h1a2 2 0 0 0 0-4H8a2 2 0 0 0 0 4h1v4.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24Z" />
+                            </svg>
+                            <span class="thread-title">Bem-vindo(a) ao JAVELF! Leia antes de postar.</span>
+                        </div>
+                        <div class="tags"><span class="tag"
+                                style="background:rgba(245,158,11,0.15);color:#f59e0b;">anúncio</span></div>
+                    </div>
+                    <div class="cat-col cat-label"><span class="cat-dot" style="background:#7c3aed"></span><span
+                            style="color:#7c3aed">Geral</span></div>
+                    <div class="users-col avatars">
+                        <div class="avatar" style="background:#7c3aed">A</div>
+                        <div class="avatar" style="background:#3b82f6">K</div>
+                        <div class="avatar" style="background:#10b981">O</div>
+                    </div>
+                    <div class="replies-col stat-col"><span class="stat-num">1</span></div>
+                    <div class="views-col stat-col"><span class="stat-sm">23.1k</span></div>
+                    <div class="time-col stat-col"><span class="stat-sm">1d</span></div>
+                </div>
+
+                <div class="thread-row" id="t2" onclick="carregarComentarios(2)">
+                    <div class="title-col">
+                        <div class="title-line">
+                            <svg class="icon-hot" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z" />
+                            </svg>
+                            <span class="thread-title">O que voce mais gostou gameplay?</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag" style="background:rgba(59,130,246,0.15);color:#3b82f6;">gameplay</span>
+                        </div>
+                    </div>
+                    <div class="cat-col cat-label"><span class="cat-dot" style="background:#3b82f6"></span><span
+                            style="color:#3b82f6">Gameplay</span></div>
+                    <div class="users-col avatars">
+                        <div class="avatar" style="background:#ec4899">L</div>
+                        <div class="avatar" style="background:#06b6d4">T</div>
+                    </div>
+                    <div class="replies-col stat-col"><span class="stat-num">4</span></div>
+                    <div class="views-col stat-col"><span class="stat-sm">18k</span></div>
+                    <div class="time-col stat-col"><span class="stat-sm">2m</span></div>
+                </div>
+
+                <div class="thread-row" id="t3" onclick="carregarComentarios(3)">
+                    <div class="title-col">
+                        <div class="title-line"><span class="thread-title">Qual é a melhor parte da Lore?</span></div>
+                        <div class="tags">
+                            <span class="tag" style="background:rgba(236,72,153,0.15);color:#ec4899;">lore</span>
+                            <span class="tag" style="background:rgba(239,68,68,0.15);color:#ef4444;">spoiler</span>
+                        </div>
+                    </div>
+                    <div class="cat-col cat-label"><span class="cat-dot" style="background:#ec4899"></span><span
+                            style="color:#ec4899">História</span></div>
+                    <div class="users-col avatars">
+                        <div class="avatar" style="background:#8b5cf6">Z</div>
+                        <div class="avatar" style="background:#3b82f6">B</div>
+                        <div class="avatar" style="background:#f97316">R</div>
+                    </div>
+                    <div class="replies-col stat-col"><span class="stat-num">1</span></div>
+                    <div class="views-col stat-col"><span class="stat-sm">7.5k</span></div>
+                    <div class="time-col stat-col"><span class="stat-sm">4m</span></div>
+                </div>
+
+                <div class="thread-row" id="t4" onclick="carregarComentarios(4)">
+                    <div class="title-col">
+                        <div class="title-line"><span class="thread-title">Mostre seu personagem favorito! </span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag" style="background:rgba(249,115,22,0.15);color:#f97316;">showcase</span>
+                            <span class="tag" style="background:rgba(168,85,247,0.15);color:#a855f7;">fanart</span>
+                        </div>
+                    </div>
+                    <div class="cat-col cat-label"><span class="cat-dot" style="background:#f97316"></span><span
+                            style="color:#f97316">Comunidade</span></div>
+                    <div class="users-col avatars">
+                        <div class="avatar" style="background:#06b6d4">C</div>
+                        <div class="avatar" style="background:#10b981">D</div>
+                        <div class="avatar" style="background:#a855f7">G</div>
+                    </div>
+                    <div class="replies-col stat-col"><span class="stat-num">1</span></div>
+                    <div class="views-col stat-col"><span class="stat-sm">3.1k</span></div>
+                    <div class="time-col stat-col"><span class="stat-sm">8m</span></div>
+                </div>
+
+                <div class="thread-row" id="t5" onclick="carregarComentarios(5)">
+                    <div class="title-col">
+                        <div class="title-line"><span class="thread-title">JAVELF EQUIP</span></div>
+                        <div class="tags">
+                            <span class="tag" style="background:rgba(59,130,246,0.15);color:#3b82f6;">guia</span>
+                            <span class="tag" style="background:rgba(16,185,129,0.15);color:#10b981;">iniciante</span>
+                        </div>
+                    </div>
+                    <div class="cat-col cat-label"><span class="cat-dot" style="background:#3b82f6"></span><span
+                            style="color:#3b82f6">Gameplay</span></div>
+                    <div class="users-col avatars">
+                        <div class="avatar" style="background:#ec4899">L</div>
+                        <div class="avatar" style="background:#7c3aed">A</div>
+                        <div class="avatar" style="background:#06b6d4">K</div>
+                    </div>
+                    <div class="replies-col stat-col"><span class="stat-num">1</span></div>
+                    <div class="views-col stat-col"><span class="stat-sm">3.0k</span></div>
+                    <div class="time-col stat-col"><span class="stat-sm">3h</span></div>
+                </div>
+
+                <div class="thread-row" id="t6" onclick="carregarComentarios(6)">
+                    <div class="title-col">
+                        <div class="title-line"><span class="thread-title">estilingue ou</span>
+                        </div>
+                        <div class="tags"><span class="tag"
+                                style="background:rgba(219,39,119,0.15);color:#db2777;">classes</span></div>
+                    </div>
+                    <div class="cat-col cat-label"><span class="cat-dot" style="background:#db2777"></span><span
+                            style="color:#db2777">Social</span></div>
+                    <div class="users-col avatars">
+                        <div class="avatar" style="background:#f43f5e">S</div>
+                        <div class="avatar" style="background:#1e3a8a">C</div>
+                    </div>
+                    <div class="replies-col stat-col"><span class="stat-num">1</span></div>
+                    <div class="views-col stat-col"><span class="stat-sm">2.9k</span></div>
+                    <div class="time-col stat-col"><span class="stat-sm">5d</span></div>
+                </div>
+
+            </div>
+            <p class="footer">© 2026 JAVELF. Todos os direitos reservados.</p>
+        </div>
+
+        <div class="topic-panel" id="topicPanel">
+            <div class="panel-container">
+                <div class="panel-header">
+                    <h3 id="topicTitle">Selecione um tópico</h3>
+                    <button class="btn-close" onclick="fecharPainel()">✕</button>
+                </div>
+                <div class="panel-meta" id="panelMeta"></div>
+                <div id="topicContent">Clique em um tópico para visualizar.</div>
+            </div>
+
+            <div class="panel-reply-box">
+                <div class="reply-container">
+                    <div class="user-avatar-current">V</div>
+                    <div class="reply-input-wrapper">
+                        <textarea placeholder="Escreva seu comentário... (Enter para enviar)"></textarea>
+                        <button class="btn-send">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13" />
+                                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="reply-hint">Shift+Enter para nova linha</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="newTopicModal"
+        style="display: none; position: fixed; inset: 0; background: rgba(6, 1, 15, 0.8); backdrop-filter: blur(8px); z-index: 100; align-items: center; justify-content: center;">
+        <div
+            style="background: rgba(10, 2, 22, 0.96); border: 1px solid rgba(139, 92, 246, 0.3); border-radius: 8px; width: 100%; max-width: 500px; padding: 24px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); position: relative;">
+            <button onclick="fecharModalNovoTopico()"
+                style="position: absolute; top: 16px; right: 16px; background: none; border: none; color: rgba(255,255,255,0.4); font-size: 18px; cursor: pointer;">✕</button>
+            <h3
+                style="font-family: 'Cinzel', serif; font-size: 16px; letter-spacing: 0.1em; color: #fff; margin-bottom: 20px; text-transform: uppercase;">
+                Criar Novo Tópico</h3>
+
+            <div style="display: flex; flex-direction: column; gap: 16px;">
+                <div>
+                    <label
+                        style="display: block; font-size: 11px; color: rgba(255,255,255,0.4); text-transform: uppercase; margin-bottom: 6px; letter-spacing: 0.05em;">Título
+                        do Tópico</label>
+                    <input type="text" id="newTopicTitle" placeholder="Ex: Dicas para derrotar o boss do Atto 3"
+                        style="width: 100%; padding: 10px 12px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; color: #fff; font-family: 'Raleway', sans-serif; font-size: 13px; outline: none;">
+                </div>
+                <div>
+                    <label
+                        style="display: block; font-size: 11px; color: rgba(255,255,255,0.4); text-transform: uppercase; margin-bottom: 6px; letter-spacing: 0.05em;">Categoria</label>
+                    <select id="newTopicCategory"
+                        style="width: 100%; padding: 10px 12px; background: #0a0216; border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; color: #fff; font-family: 'Raleway', sans-serif; font-size: 13px; outline: none; cursor: pointer;">
+                        <option value="Gameplay" data-color="#3b82f6">Gameplay</option>
+                        <option value="História" data-color="#ec4899">História</option>
+                        <option value="Arte" data-color="#e879f9">Arte</option>
+                        <option value="Comunidade" data-color="#f97316">Comunidade</option>
+                        <option value="Social" data-color="#db2777">Social</option>
+                    </select>
+                </div>
+                <div>
+                    <label
+                        style="display: block; font-size: 11px; color: rgba(255,255,255,0.4); text-transform: uppercase; margin-bottom: 6px; letter-spacing: 0.05em;">Conteúdo
+                        Inicial</label>
+                    <textarea id="newTopicContent" placeholder="Escreva o texto inicial do seu tópico aqui..."
+                        style="width: 100%; height: 100px; padding: 10px 12px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; color: #fff; font-family: 'Raleway', sans-serif; font-size: 13px; resize: none; outline: none; line-height: 1.4;"></textarea>
+                </div>
+                <button onclick="salvarNovoTopico()"
+                    style="width: 100%; padding: 12px; background: linear-gradient(135deg, #7c3aed, #ec4899); color: #fff; font-family: 'Cinzel', serif; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; border: none; border-radius: 4px; cursor: pointer; margin-top: 10px;">Publicar
+                    Tópico</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/Frontend/js/forum.js"></script>
+</body>
+
+</html>

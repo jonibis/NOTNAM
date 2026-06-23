@@ -114,8 +114,13 @@
     }
 
     .logo{
-      font-size:28px;
-      letter-spacing:4px;
+      font-family: 'Cinzel', serif;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: #fff;
+      text-decoration: none;
     }
 
     .menu{
