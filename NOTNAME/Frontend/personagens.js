@@ -13,11 +13,11 @@ spriteDescricao:
 "imagem/personagens/nanami-completa.png",
 
 fundo:
-"imagem/fundo/floflo.jpg"
+"imagem/fundo/floresta.gif"
 },
 
 {
-nome:"Gata",
+nome:"BASTET",
 
 descricao:
 "Uma gata misteriosa que aparece quando algo importante está prestes a acontecer.",
@@ -28,6 +28,9 @@ sprite:
 spriteDescricao:
 "imagem/personagens/gata-completa.png",
 
+fundo:
+"imagem/fundo/egito.gif"
+
 },
 
 {
@@ -37,10 +40,13 @@ descricao:
 "Pequenas criaturas mágicas que vivem escondidas na floresta.",
 
 sprite:
-"imagem/personagens/gnomos.png",
+"imagem/personagens/gnomo-vermelho.png",
 
 spriteDescricao:
-"imagem/personagens/gnomos-completo.png"
+"imagem/personagens/gnomos-completo.png",
+
+fundo:
+"imagem/fundo/casasgnomo.gif"
 },
 
 {
@@ -53,8 +59,11 @@ sprite:
 "imagem/personagens/corvo.png",
 
 spriteDescricao:
-"imagem/personagens/corvo-completo.png"
-},
+"imagem/personagens/corvo-completo.png",
+
+fundo:
+"imagem/fundo/dark.gif"
+}, 
 
 {
 nome:"Fantasma",
@@ -63,13 +72,13 @@ descricao:
 "Uma entidade perdida entre os mundos que acompanha Nanami.",
 
 sprite:
-"imagem/personagens/fantasma.png",
+"imagem/personagens/fantasmabu.png",
 
 spriteDescricao:
 "imagem/personagens/fantasma-completo.png",
 
 fundo:
-"imagem/fundo/cemiterio.png" 
+"imagem/fundo/cemiterio.gif" 
 },
 
 {
@@ -82,7 +91,10 @@ sprite:
 "imagem/personagens/gato.png",
 
 spriteDescricao:
-"imagem/personagens/gato-completo.png"
+"imagem/personagens/gato-completo.png",
+
+fundo:
+"imagem/fundo/antigo.gif"
 },
 
 {
@@ -92,10 +104,13 @@ descricao:
 "Uma criatura antiga que habita os pântanos esquecidos.",
 
 sprite:
-"imagem/personagens/jacare.png",
+"imagem/personagens/jacarezinho.png",
 
 spriteDescricao:
-"imagem/personagens/jacare-completo.png"
+"imagem/personagens/jacare-completo.png",
+
+fundo:
+"imagem/fundo/pantano.gif"
 }
 
 ];
@@ -111,11 +126,13 @@ document.getElementById("descricao");
 const spritePrincipal =
 document.getElementById("spritePrincipal");
 
-const spriteDescricao =
-document.getElementById("spriteDescricao");
+const descricaoNanami =
+document.getElementById("descricaoNanami");
 
 const card =
 document.getElementById("personagemCard");
+
+const spriteDescricao = document.getElementById("spritePrincipal");
 
 function atualizar(){
 
@@ -128,10 +145,17 @@ personagens[atual].descricao;
 spritePrincipal.src =
 personagens[atual].sprite;
 
-spriteDescricao.src =
-personagens[atual].spriteDescricao;
+if (personagens[atual].fundo) {
+    card.style.backgroundImage = `url('${personagens[atual].fundo}')`;
+  } else {
+    card.style.backgroundImage = "none"; // Ou coloque um fundo padrão aqui, ex: "url('imagem/fundo/padrao.jpg')"
+  }
 
-card.style.backgroundImage = `url('${personagens[atual].fundo}')`;
+if(personagens[atual].nome ==="Nanami"){
+    descricaoNanami.style.display = "block";
+}else{
+    descricaoNanami.style.display = "none";
+}
 }
 
 document
@@ -163,3 +187,4 @@ atualizar();
 });
 
 atualizar();
+
