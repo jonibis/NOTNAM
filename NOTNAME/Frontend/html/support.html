@@ -68,23 +68,24 @@ Nossa equipe responderá o mais rápido possível.
 
 </p>
 
-<form>
+<form id="supportForm">
 
-<input type="text" placeholder="Nome">
+<input type="text" name="nome" placeholder="Nome">
 
-<input type="email" placeholder="Email">
+<input type="email" name="email" placeholder="Email">
 
-<input type="text" placeholder="Assunto">
+<input type="text" name="assunto" placeholder="Assunto">
 
-<textarea placeholder="Descreva seu problema"></textarea>
+<textarea name= "mensagem" placeholder="Descreva seu problema"></textarea>
 
-<button type="submit" class="ENVIAR">
+<button type="submit"  class="enviar">
 
 ENVIAR
 
 </button>
 
 </form>
+<p id="mensagemSucesso"></p>
 
 </section>
 
@@ -124,7 +125,7 @@ ENVIAR
 
 </footer>
 
-<script src="../projeto/script.js/support.js"></script>
+<script src="../script.js/support.js"></script>
 </body>
 
 </html>
