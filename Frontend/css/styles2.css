@@ -113,8 +113,11 @@
       padding:30px 60px;
     }
 
+    .SUPPORT{
+      scroll-behavior: smooth;
+    }
+
     .logo{
-      font-family: 'Cinzel', serif;
       font-weight: 700;
       font-size: 13px;
       letter-spacing: 0.3em;
