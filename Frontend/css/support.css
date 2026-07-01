@@ -1,0 +1,412 @@
+*{
+
+margin:0;
+
+padding:0;
+
+box-sizing:border-box;
+
+}
+
+
+body{
+    margin:0;
+    font-family:'Press Start 2P', cursive;
+
+    background-image:
+        linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.75)),
+         url("../../imagem/support.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    color:white;
+    background-size:110%;
+    animation:fundo 20s linear infinite;
+
+}
+
+/* NAVBAR */
+
+.navbar{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:25px 60px;
+
+background:#000;
+
+}
+
+.logo{
+
+font-size:26px;
+
+}
+
+.menu{
+
+display:flex;
+
+gap:40px;
+
+}
+
+.menu a{
+
+color:white;
+
+text-decoration:none;
+
+font-size:10px;
+
+transition:.3s;
+
+}
+
+.menu a:hover{
+
+color:#c992ff;
+
+}
+
+.login-area{
+
+display:flex;
+
+align-items:center;
+
+gap:15px;
+
+}
+
+.login-btn{
+
+background:#c992ff;
+
+padding:12px 24px;
+
+border-radius:30px;
+
+text-decoration:none;
+
+color:white;
+
+font-size:9px;
+
+transition:.3s;
+
+}
+
+.login-btn:hover{
+
+background:#ddb7ff;
+
+}
+
+.user-avatar{
+
+width:45px;
+
+height:45px;
+
+border-radius:50%;
+
+overflow:hidden;
+
+}
+
+.user-avatar img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+}
+
+/* SUPPORT */
+
+.support{
+
+width:100%;
+
+max-width:900px;
+
+margin:auto;
+
+padding:80px 20px;
+
+text-align:center;
+
+}
+
+.support-box{
+
+    width:850px;
+
+    margin:80px auto;
+
+    padding:50px;
+
+    background:rgba(25,25,35,.92);
+
+    border:4px solid #c992ff;
+
+    border-radius:18px;
+
+    box-shadow:
+    0 0 25px rgba(201,146,255,.35),
+    inset 0 0 25px rgba(255,255,255,.05);
+
+}
+
+.support h1{
+
+font-size:28px;
+
+margin-bottom:30px;
+
+}
+
+.support p{
+
+font-size:11px;
+
+line-height:2;
+
+margin-bottom:50px;
+
+}
+
+form{
+
+display:flex;
+
+flex-direction:column;
+
+gap:25px;
+
+}
+
+input{
+
+padding:20px;
+
+border:none;
+
+border-radius:10px;
+
+background:#222;
+
+color:white;
+
+font-family:'Press Start 2P', cursive;
+
+}
+
+textarea{
+
+height:220px;
+
+padding:20px;
+
+resize:none;
+
+border:none;
+
+border-radius:10px;
+
+background:#222;
+
+color:white;
+
+font-family:'Press Start 2P', cursive;
+
+}
+
+button{
+
+width:300px;
+
+margin:auto;
+
+padding:18px;
+
+border:none;
+
+border-radius:40px;
+
+background:#c992ff;
+
+color:white;
+
+font-family:'Press Start 2P', cursive;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+button:hover{
+
+transform:scale(1.05);
+
+background:#ddb7ff;
+
+}
+
+/* FOOTER */
+
+footer{
+
+margin-top:80px;
+
+padding:50px;
+
+background:#c992ff;
+
+display:flex;
+
+justify-content:space-around;
+
+color:black;
+
+}
+
+footer h3{
+
+margin-bottom:15px;
+
+font-size:12px;
+
+}
+
+footer p{
+
+font-size:10px;
+
+}
+@keyframes fundo{
+
+    0%{
+        background-position:center top;
+    }
+
+    100%{
+        background-position:center bottom;
+    }
+
+}
+
+.support-box input,
+.support-box textarea{
+
+    width:100%;
+
+    padding:18px;
+
+    margin-top:20px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#181818;
+
+    color:white;
+
+    font-family:'Press Start 2P', cursive;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+.support-box input:focus,
+.support-box textarea:focus{
+
+    border:2px solid #c992ff;
+
+    box-shadow:0 0 15px #c992ff;
+
+}
+
+.enviar{
+
+    width:320px;
+
+    padding:18px 0;
+
+    background:linear-gradient(180deg,#d8a4ff,#b56cff);
+
+    border:3px solid #ffffff;
+
+    border-radius:40px;
+
+    color:white;
+
+    font-family:'Press Start 2P', cursive;
+
+    font-size:10px;
+
+    cursor:pointer;
+
+    transition:0.35s;
+
+    box-shadow:
+        0 0 10px rgba(201,146,255,.6),
+        0 0 30px rgba(201,146,255,.4);
+}
+
+.enviar:hover{
+
+    transform:translateY(-5px) scale(1.05);
+
+    background:linear-gradient(180deg,#e7c4ff,#c992ff);
+
+    box-shadow:
+        0 0 20px #c992ff,
+        0 0 40px #c992ff,
+        0 0 60px #c992ff;
+
+}
+
+.enviar:active{
+
+   transform:scale(.95);
+
+    box-shadow:
+        0 0 10px #c992ff;
+
+}
+
+#mensagemSucesso{
+
+    margin-top:30px;
+
+    text-align: center;
+
+    font-size:11px;
+
+    color:#8cff8c;
+
+    opacity:0;
+
+    transition:1s;
+
+}
+
+#mensagemSucesso.mostrar{
+
+    opacity:1;
+
+}
