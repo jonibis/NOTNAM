@@ -1,377 +1,378 @@
-*{
+* {
 
-margin:0;
+    margin: 0;
 
-padding:0;
+    padding: 0;
 
-box-sizing:border-box;
+    box-sizing: border-box;
 
 }
 
 
-body{
-    margin:0;
-    font-family:'Press Start 2P', cursive;
+body {
+    margin: 0;
+    font-family: 'Press Start 2P', cursive;
 
     background-image:
-        linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.75)),
-         url("../../imagem/support.jpg");
+        linear-gradient(rgba(0, 0, 0, .55), rgba(0, 0, 0, .75)),
+        url("../img/support.jpg");
 
-    background-size:cover;
-    background-position:center;
-    background-attachment:fixed;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 
-    color:white;
-    background-size:110%;
-    animation:fundo 20s linear infinite;
+    color: white;
+    background-size: 110%;
+    animation: fundo 20s linear infinite;
 
 }
 
 /* NAVBAR */
 
-.navbar{
+.navbar {
 
-display:flex;
+    display: flex;
 
-justify-content:space-between;
+    justify-content: space-between;
 
-align-items:center;
+    align-items: center;
 
-padding:25px 60px;
+    padding: 25px 60px;
 
-background:#000;
-
-}
-
-.logo{
-
-font-size:26px;
+    background: #000;
 
 }
 
-.menu{
+.logo {
 
-display:flex;
-
-gap:40px;
+    font-size: 26px;
 
 }
 
-.menu a{
+.menu {
 
-color:white;
+    display: flex;
 
-text-decoration:none;
-
-font-size:10px;
-
-transition:.3s;
+    gap: 40px;
 
 }
 
-.menu a:hover{
+.menu a {
 
-color:#c992ff;
+    color: white;
 
-}
+    text-decoration: none;
 
-.login-area{
+    font-size: 10px;
 
-display:flex;
-
-align-items:center;
-
-gap:15px;
+    transition: .3s;
 
 }
 
-.login-btn{
+.menu a:hover {
 
-background:#c992ff;
-
-padding:12px 24px;
-
-border-radius:30px;
-
-text-decoration:none;
-
-color:white;
-
-font-size:9px;
-
-transition:.3s;
+    color: #c992ff;
 
 }
 
-.login-btn:hover{
+.login-area {
 
-background:#ddb7ff;
+    display: flex;
 
-}
+    align-items: center;
 
-.user-avatar{
-
-width:45px;
-
-height:45px;
-
-border-radius:50%;
-
-overflow:hidden;
+    gap: 15px;
 
 }
 
-.user-avatar img{
+.login-btn {
 
-width:100%;
+    background: #c992ff;
 
-height:100%;
+    padding: 12px 24px;
 
-object-fit:cover;
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    color: white;
+
+    font-size: 9px;
+
+    transition: .3s;
+
+}
+
+.login-btn:hover {
+
+    background: #ddb7ff;
+
+}
+
+.user-avatar {
+
+    width: 45px;
+
+    height: 45px;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+}
+
+.user-avatar img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
 
 }
 
 /* SUPPORT */
 
-.support{
+.support {
 
-width:100%;
+    width: 100%;
 
-max-width:900px;
+    max-width: 900px;
 
-margin:auto;
+    margin: auto;
 
-padding:80px 20px;
+    padding: 80px 20px;
 
-text-align:center;
+    text-align: center;
 
 }
 
-.support-box{
+.support-box {
 
-    width:850px;
+    width: 850px;
 
-    margin:80px auto;
+    margin: 80px auto;
 
-    padding:50px;
+    padding: 50px;
 
-    background:rgba(25,25,35,.92);
+    background: rgba(25, 25, 35, .92);
 
-    border:4px solid #c992ff;
+    border: 4px solid #c992ff;
 
-    border-radius:18px;
+    border-radius: 18px;
 
     box-shadow:
-    0 0 25px rgba(201,146,255,.35),
-    inset 0 0 25px rgba(255,255,255,.05);
+        0 0 25px rgba(201, 146, 255, .35),
+        inset 0 0 25px rgba(255, 255, 255, .05);
 
 }
 
-.support h1{
+.support h1 {
 
-font-size:28px;
+    font-size: 28px;
 
-margin-bottom:30px;
-
-}
-
-.support p{
-
-font-size:11px;
-
-line-height:2;
-
-margin-bottom:50px;
+    margin-bottom: 30px;
 
 }
 
-form{
+.support p {
 
-display:flex;
+    font-size: 11px;
 
-flex-direction:column;
+    line-height: 2;
 
-gap:25px;
-
-}
-
-input{
-
-padding:20px;
-
-border:none;
-
-border-radius:10px;
-
-background:#222;
-
-color:white;
-
-font-family:'Press Start 2P', cursive;
+    margin-bottom: 50px;
 
 }
 
-textarea{
+form {
 
-height:220px;
+    display: flex;
 
-padding:20px;
+    flex-direction: column;
 
-resize:none;
-
-border:none;
-
-border-radius:10px;
-
-background:#222;
-
-color:white;
-
-font-family:'Press Start 2P', cursive;
+    gap: 25px;
 
 }
 
-button{
+input {
 
-width:300px;
+    padding: 20px;
 
-margin:auto;
+    border: none;
 
-padding:18px;
+    border-radius: 10px;
 
-border:none;
+    background: #222;
 
-border-radius:40px;
+    color: white;
 
-background:#c992ff;
-
-color:white;
-
-font-family:'Press Start 2P', cursive;
-
-cursor:pointer;
-
-transition:.3s;
+    font-family: 'Press Start 2P', cursive;
 
 }
 
-button:hover{
+textarea {
 
-transform:scale(1.05);
+    height: 220px;
 
-background:#ddb7ff;
+    padding: 20px;
+
+    resize: none;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #222;
+
+    color: white;
+
+    font-family: 'Press Start 2P', cursive;
+
+}
+
+button {
+
+    width: 300px;
+
+    margin: auto;
+
+    padding: 18px;
+
+    border: none;
+
+    border-radius: 40px;
+
+    background: #c992ff;
+
+    color: white;
+
+    font-family: 'Press Start 2P', cursive;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+button:hover {
+
+    transform: scale(1.05);
+
+    background: #ddb7ff;
 
 }
 
 /* FOOTER */
 
-footer{
+footer {
 
-margin-top:80px;
+    margin-top: 80px;
 
-padding:50px;
+    padding: 50px;
 
-background:#c992ff;
+    background: #c992ff;
 
-display:flex;
+    display: flex;
 
-justify-content:space-around;
+    justify-content: space-around;
 
-color:black;
-
-}
-
-footer h3{
-
-margin-bottom:15px;
-
-font-size:12px;
+    color: black;
 
 }
 
-footer p{
+footer h3 {
 
-font-size:10px;
+    margin-bottom: 15px;
+
+    font-size: 12px;
 
 }
-@keyframes fundo{
 
-    0%{
-        background-position:center top;
+footer p {
+
+    font-size: 10px;
+
+}
+
+@keyframes fundo {
+
+    0% {
+        background-position: center top;
     }
 
-    100%{
-        background-position:center bottom;
+    100% {
+        background-position: center bottom;
     }
 
 }
 
 .support-box input,
-.support-box textarea{
+.support-box textarea {
 
-    width:100%;
+    width: 100%;
 
-    padding:18px;
+    padding: 18px;
 
-    margin-top:20px;
+    margin-top: 20px;
 
-    border:none;
+    border: none;
 
-    border-radius:12px;
+    border-radius: 12px;
 
-    background:#181818;
+    background: #181818;
 
-    color:white;
+    color: white;
 
-    font-family:'Press Start 2P', cursive;
+    font-family: 'Press Start 2P', cursive;
 
-    outline:none;
+    outline: none;
 
-    transition:.3s;
+    transition: .3s;
 
 }
 
 .support-box input:focus,
-.support-box textarea:focus{
+.support-box textarea:focus {
 
-    border:2px solid #c992ff;
+    border: 2px solid #c992ff;
 
-    box-shadow:0 0 15px #c992ff;
+    box-shadow: 0 0 15px #c992ff;
 
 }
 
-.enviar{
+.enviar {
 
-    width:320px;
+    width: 320px;
 
-    padding:18px 0;
+    padding: 18px 0;
 
-    background:linear-gradient(180deg,#d8a4ff,#b56cff);
+    background: linear-gradient(180deg, #d8a4ff, #b56cff);
 
-    border:3px solid #ffffff;
+    border: 3px solid #ffffff;
 
-    border-radius:40px;
+    border-radius: 40px;
 
-    color:white;
+    color: white;
 
-    font-family:'Press Start 2P', cursive;
+    font-family: 'Press Start 2P', cursive;
 
-    font-size:10px;
+    font-size: 10px;
 
-    cursor:pointer;
+    cursor: pointer;
 
-    transition:0.35s;
+    transition: 0.35s;
 
     box-shadow:
-        0 0 10px rgba(201,146,255,.6),
-        0 0 30px rgba(201,146,255,.4);
+        0 0 10px rgba(201, 146, 255, .6),
+        0 0 30px rgba(201, 146, 255, .4);
 }
 
-.enviar:hover{
+.enviar:hover {
 
-    transform:translateY(-5px) scale(1.05);
+    transform: translateY(-5px) scale(1.05);
 
-    background:linear-gradient(180deg,#e7c4ff,#c992ff);
+    background: linear-gradient(180deg, #e7c4ff, #c992ff);
 
     box-shadow:
         0 0 20px #c992ff,
@@ -380,33 +381,33 @@ font-size:10px;
 
 }
 
-.enviar:active{
+.enviar:active {
 
-   transform:scale(.95);
+    transform: scale(.95);
 
     box-shadow:
         0 0 10px #c992ff;
 
 }
 
-#mensagemSucesso{
+#mensagemSucesso {
 
-    margin-top:30px;
+    margin-top: 30px;
 
     text-align: center;
 
-    font-size:11px;
+    font-size: 11px;
 
-    color:#8cff8c;
+    color: #8cff8c;
 
-    opacity:0;
+    opacity: 0;
 
-    transition:1s;
+    transition: 1s;
 
 }
 
-#mensagemSucesso.mostrar{
+#mensagemSucesso.mostrar {
 
-    opacity:1;
+    opacity: 1;
 
 }

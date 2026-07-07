@@ -121,13 +121,7 @@
    align-items: center;
 
    background: transparent;
-
-
-
  }
-
-
-
 
  .livro-img {
    width: 100%;
@@ -137,8 +131,6 @@
 
    image-rendering: pixelated;
  }
-
-
 
  /* NAVBAR */
 
@@ -151,6 +143,7 @@
  }
 
  .logo {
+   color: white;
    font-size: 28px;
    letter-spacing: 4px;
  }
@@ -167,11 +160,6 @@
 
  .menu a:hover {
    color: #d9a8ff;
- }
-
- .SUPPORT {
-  scroll-behavior: smooth;
-
  }
 
  /* HERO CONTENT */

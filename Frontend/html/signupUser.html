@@ -24,7 +24,7 @@
     <div class="overlay"></div>
 
     <header>
-      <div class="logo" onclick="window.location.href = 'home.html' ">
+      <div class="logo" onclick="window.location.href='home.html'">
         JAVELF
       </div>
 
@@ -68,15 +68,15 @@
             Preencha com suas informações para criar a conta.
           </p>
 
-          <form>
+          <form action="/Backend/php/cadastro.php" method="post">
 
-            <input type="text" placeholder="Nome">
+            <input type="text" name="Nome" placeholder="Nome">
 
-            <input type="email" placeholder="E-mail">
+            <input type="email" name="email" placeholder="E-mail">
 
-            <input type="tel" placeholder="Telefone">
+            <input type="tel" name="Telefone" placeholder="Telefone">
 
-            <input type="password" placeholder="Senha">
+            <input type="password" name="Senha" placeholder="Senha">
 
             <label class="checkbox">
               <input type="checkbox">
